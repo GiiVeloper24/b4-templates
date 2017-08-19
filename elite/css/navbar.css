@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
+body{
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+}
+
 .top-left{
 	display: block;
     margin-right: 1rem;
@@ -10,6 +16,45 @@
 
 .navbar-elite{
 	padding: 0;
+}
+
+.navbar-elite.sidebar{
+	position: absolute;
+	width:220px;
+	height: 100%;
+}
+
+.user-profile{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.user-profile a {
+    color: #54667a;
+    text-decoration: none;
+    margin-top:5px;
+}
+
+.user-profile .dropdown-menu {
+    position: absolute;
+    top:80px !important;
+    right: 0;
+    left: 0;
+    width: 180px;
+    margin: auto;
+}
+
+.img-container.center{
+	text-align: center;
+}
+
+.img-container img{
+	max-width: 50px;
+}
+
+.dropdown-toggle.u-dropdown{
+	color: #54667a;
+	font-size: 14px;
 }
 
 b.left{
