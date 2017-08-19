@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <br>
+    <!-- Bootstrap Defaults -->
+    <div class="container">
+        <!-- Content here -->
+        <h1>Alerts</h1>
+        <div class="alert alert-primary" role="alert">
+            This is a primary alert—check it out!
+        </div>
+        <div class="alert alert-secondary" role="alert">
+            This is a secondary alert—check it out!
+        </div>
+        <div class="alert alert-success" role="alert">
+            This is a success alert—check it out!
+        </div>
+        <div class="alert alert-danger" role="alert">
+            This is a danger alert—check it out!
+        </div>
+        <div class="alert alert-warning" role="alert">
+            This is a warning alert—check it out!
+        </div>
+        <div class="alert alert-info" role="alert">
+            This is a info alert—check it out!
+        </div>
+        <div class="alert alert-light" role="alert">
+            This is a light alert—check it out!
+        </div>
+        <div class="alert alert-dark" role="alert">
+            This is a dark alert—check it out!
+        </div>
+        <br>
+        <h1>Alerts with color links</h1>
+        <div class="alert alert-primary" role="alert">
+            This is a primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+        </div>
+        <div class="alert alert-secondary" role="alert">
+            This is a secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+        </div>
+        <div class="alert alert-success" role="alert">
+            This is a success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+        </div>
+        <div class="alert alert-danger" role="alert">
+            This is a danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+        </div>
+        <div class="alert alert-warning" role="alert">
+            This is a warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+        </div>
+        <div class="alert alert-info" role="alert">
+            This is a info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+        </div>
+        <div class="alert alert-light" role="alert">
+            This is a light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+        </div>
+        <div class="alert alert-dark" role="alert">
+            This is a dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+        </div>
+        <br>
+        <h1>Alert with additional contents</h1>
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Well done!</h4>
+            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+            <hr>
+            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+        </div>
+        <br>
+        <h1>Alert Dismissable</h1>
+        <div class="test alert alert-warning alert-dismissible fade show" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        </div>
+        <button id="alert">Alert</button>
+        <br>
+        <br>
+        <h1>CARDS</h1>
+        <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22318%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20318%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15df8be13a4%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A16pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15df8be13a4%22%3E%3Crect%20width%3D%22318%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22118.0859375%22%20y%3D%2297.2%22%3E318x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card w-50">
+		  <div class="card-body">
+		    <h4 class="card-title">Card title</h4>
+		    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		    <a href="#" class="btn btn-primary">Button</a>
+		  </div>
+		</div>
+    </div>
+    <!-- jQuery first, then Tether, then Popper, then Bootstrap JS. -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/tether.min.js"></script>
+    <script src="bootstrap/js/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+    $("#alert").click(function() {
+        $(".test").alert();
+    })
+    </script>
+</body>
+
+</html>

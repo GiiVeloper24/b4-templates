@@ -1,0 +1,25 @@
+.top-left{
+	display: block;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    background: #fff;
+    width:220px;
+}
+
+.navbar-elite{
+	padding: 0;
+}
+
+b.left{
+    height: 60px;
+    display: inline-block;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+b.right{
+	margin-left: -5px;
+}
