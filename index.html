@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="bootstrap/css/animate.css" />
     <link rel="stylesheet" href="bootstrap/css/colors.css" />
     <link rel="stylesheet" href="elite/css/font-awesome.min.css">
+    <link rel="stylesheet" href="elite/css/waves.min.css" />
     <link rel="stylesheet" href="elite/css/navbar.css" />
 </head>
 
@@ -30,7 +31,6 @@
                 <div class="img-container center">
                     <img src="http://eliteadmin.themedesigner.in/demos/plugins/images/users/varun.jpg" alt="user-img" class="rounded-circle mx-auto d-block mb-2">
                     <a href="#" class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Steave Gection <span class="caret"></span></a>
-                    
                     <div class="dropdown-menu animated flipInY" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="#"><i class="fa fa-user"></i> My Profile</a>
                         <a class="dropdown-item" href="#"><i class="fa fa-wallet"></i> My Balance</a>
@@ -43,12 +43,54 @@
                 </div>
             </div>
         </div>
+        <ul class="nav" id="side-menu">
+            <li class="nav-small-cap mt-3">--- Main Menu</li>
+            <li>
+                <a href="javascript:void(0);" class="waves-effect">
+                    <i class="linear-icon fa fa-tachometer" data-icon="v"></i>
+                    <span class="hide-menu"> 
+                        Dashboard <span class="fa fa-angle-right arrow"></span>
+                        <span class="badge badge-pill badge-side-nav badge-info float-right">4</span>
+                    </span>
+                </a>
+                <ul class="nav nav-second-level collapse">
+                    <li> <a href="#" class="active">Minimalistic</a> </li>
+                    <li> <a href="#">Demographical</a> </li>
+                    <li> <a href="#">Analitical</a> </li>
+                    <li> <a href="#">Simpler</a> </li>
+                </ul>
+            </li>
+        </ul>
     </div>
     <!-- jQuery first, then Tether, then Popper, then Bootstrap JS. -->
     <script src="bootstrap/js/jquery.min.js"></script>
     <script src="bootstrap/js/tether.min.js"></script>
     <script src="bootstrap/js/popper.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="elite/js/waves.min.js"></script>
+    <script>
+    var config = {
+        // How long Waves effect duration 
+        // when it's clicked (in milliseconds)
+        duration: 500,
+
+        // Delay showing Waves effect on touch
+        // and hide the effect if user scrolls
+        // (0 to disable delay) (in milliseconds)
+        delay: 200
+    };
+
+    // Initialise Waves with the config
+    Waves.init(config);
+
+    $(document).ready(function(){
+        $(".nav li").click(function(){
+            var a = $(this);
+            a.toggleClass("active");
+            a.find("ul").toggleClass("in");
+        })
+    })
+    </script>
 </body>
 
 </html>
