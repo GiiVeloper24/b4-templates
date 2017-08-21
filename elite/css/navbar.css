@@ -1,4 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
+
+@media(min-width: 768px) {
+	i.fa-menu:before{
+		content: "\f060";
+	}
+}
+
+@media(max-width: 768px){
+	i.fa-menu:before{
+		content: "\f0c9";
+	}
+}
+
+
 body{
     font-family: Poppins, sans-serif;
     font-weight: 300;
@@ -12,10 +26,30 @@ a:link{
 .top-left{
 	display: block;
     font-size: 1.25rem;
+    z-index: 10;
     line-height: inherit;
     white-space: nowrap;
     background: #fff;
     width:220px;
+}
+
+.top-right{
+	flex:75;
+	display: flex;
+}
+
+.nav-left{
+	flex:50%;
+}
+
+.nav-right{
+	flex:50%;
+	flex-direction: row-reverse !important;
+}
+
+
+.navbar-dark{
+	background: #4F5467;
 }
 
 .navbar-elite{
@@ -25,6 +59,8 @@ a:link{
 
 .navbar-elite.sidebar{
 	position: absolute;
+	top:0;
+	padding-top:60px;
 	width:220px;
     height: 100%;
     background: #fff;

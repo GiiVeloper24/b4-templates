@@ -1,0 +1,40 @@
+body{
+	background: #edf1f5;
+	display: absolute;
+	height:100%;
+	width: 100%;
+}
+
+.wrapper{
+	display: absolute;
+	top:0;
+	left:0;
+	height:100%;
+	margin-left: 220px;
+}
+
+.wrapper h4{
+	margin:0;
+	line-height: 60px;
+	font-size: 18px;
+    color: rgba(0,0,0,.5);
+    font-weight: 600;
+}
+
+.wrapper > .navbar{
+	z-index: -1;
+}
+
+.breadcrumb-nav{
+	margin:0;
+	line-height: 36px;
+}
+/* 
+.breadcrumb > a{
+	color:#fb9678;
+}
+
+.breadcrumb > a:hover{
+	color:#ff6849;
+}
+ */

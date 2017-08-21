@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="elite/css/font-awesome.min.css">
     <link rel="stylesheet" href="elite/css/waves.min.css" />
     <link rel="stylesheet" href="elite/css/navbar.css" />
+    <link rel="stylesheet" href="elite/css/main.css" />
 </head>
 
 <body>
-    <nav class="navbar navbar-elite navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-elite navbar-expand-lg navbar-dark">
         <div class="top-left">
             <b class="left">
                 <img src="http://eliteadmin.themedesigner.in/demos/plugins/images/eliteadmin-logo-dark.png" alt="home" class="dark-logo">
@@ -23,35 +24,37 @@
                 <img src="http://eliteadmin.themedesigner.in/demos/plugins/images/eliteadmin-text-dark.png" alt="home" class="light-logo">
             </b>
         </div>
-        <ul class="nav-top-links float-left">
-            <li>
-                <a href="#" class="open-close d-none d-md-block waves-effect waves-light">
-                    <i class="fa fa-arrow-left"></i>
-                </a>
-            </li>
-            <li class="in">
-                <form role="search" class="app-search d-none d-md-block">
-                    <input type="text" placeholder="Search..." class="form-control d-none d-md-block">
-                </form>
-            </li>
-        </ul>
-        <ul class="navbar-nav nav-top-right flex-row ml-md-auto d-none d-md-flex">
-            <li>
-                <a href="#" class="open-close d-none d-md-block waves-effect waves-light">
-                    <i class="fa fa-envelope-o"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="open-close d-none d-md-block waves-effect waves-light">
-                    <i class="fa fa-pencil-square-o"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="open-close d-none d-md-block waves-effect waves-light">
-                    <i class="fa fa-gear"></i>
-                </a>
-            </li>
-        </ul>
+        <div class="top-right flex-row ml-md-auto">
+            <ul class="nav-top-links float-left nav-left">
+                <li>
+                    <a href="#" class="open-close waves-effect waves-light">
+                        <i class="fa fa-menu"></i>
+                    </a>
+                </li>
+                <li class="in">
+                    <form role="search" class="app-search d-none d-md-block">
+                        <input type="text" placeholder="Search..." class="form-control d-none d-md-block">
+                    </form>
+                </li>
+            </ul>
+            <ul class="navbar-nav nav-top-right flex-row nav-right">
+                <li>
+                    <a href="#" class="open-close waves-effect waves-light">
+                        <i class="fa fa-envelope-o"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="open-close waves-effect waves-light">
+                        <i class="fa fa-pencil-square-o"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="open-close waves-effect waves-light">
+                        <i class="fa fa-gear"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <!-- sidebar nav -->
     <div class="navbar-elite sidebar" role="navigation">
@@ -90,6 +93,16 @@
                 </ul>
             </li>
         </ul>
+    </div>
+    <div class="wrapper">
+        <div class="bg-white">
+            <div class="breadcrumb breadcrumb-nav bg-white">
+                <a class="breadcrumb-item" href="#">Home</a>
+                <a class="breadcrumb-item" href="#">Library</a>
+                <a class="breadcrumb-item" href="#">Data</a>
+                <span class="breadcrumb-item active">Bootstrap</span>
+            </div>
+        </div>
     </div>
     <!-- jQuery first, then Tether, then Popper, then Bootstrap JS. -->
     <script src="bootstrap/js/jquery.min.js"></script>
