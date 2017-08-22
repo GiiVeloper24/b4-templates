@@ -1,0 +1,18 @@
+.white-box{
+    background: #fff;
+    padding:20px 10px;
+}
+
+.card-summary{
+    padding:20px;
+}
+
+.progress-bar-thin{
+    height: 4px;
+}
+
+@media (max-width: 1024px){
+    .b-r-none {
+        border-right: 0;
+    }
+}
