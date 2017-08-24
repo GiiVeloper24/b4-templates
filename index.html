@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="elite/css/navbar.css" />
     <link rel="stylesheet" href="elite/css/main.css" />
     <link rel="stylesheet" href="elite/css/cards.css" />
+
+    <!-- using chart -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
 </head>
 
 <body>
@@ -179,6 +182,22 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="card-elite">
+                        <h3 class="card-title">YEARLY SALES</h3>
+                        <div class="card-content">
+                            <ul class="legend text-right">
+                                <li><i class="fa fa-circle mr-1" style="color:#9675ce"></i>iPhone</li>
+                                <li><i class="fa fa-circle mr-1" style="color:#00bfc7"></i>iPad</li>
+                            </ul>
+                            <div id="myChart" style="height: 340px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- jQuery first, then Tether, then Popper, then Bootstrap JS. -->
     <script src="bootstrap/js/jquery.min.js"></script>
@@ -186,6 +205,11 @@
     <script src="bootstrap/js/popper.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="elite/js/waves.min.js"></script>
+
+    <!-- use this when using chart -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
     <script>
     var config = {
         // How long Waves effect duration 
@@ -207,6 +231,27 @@
             a.toggleClass("active");
             a.find("ul").toggleClass("in");
         })
+
+
+        new Morris.Line({
+            element: 'myChart',
+            data: [
+                { year: '2010', iPhone: 20, iPad: 20 },
+                { year: '2011', iPhone: 80, iPad: 30 },
+                { year: '2012', iPhone: 70, iPad: 200 },
+                { year: '2013', iPhone: 140, iPad: 100 },
+                { year: '2014', iPhone: 140, iPad: 80 },
+                { year: '2015', iPhone: 80, iPad: 55 },
+                { year: '2016', iPhone: 200, iPad: 78 }
+            ],
+            pointStokeColors: ["#9675ce","#00bfc7"],
+            pointFillColors : ["#9675ce","#00bfc7"],
+            lineColors : ["#9675ce","#00bfc7"],
+            xkey: 'year',
+            ykeys: ['iPhone','iPad'],
+            labels: ['Value'],
+            resize:true
+        });
     })
     </script>
 </body>
